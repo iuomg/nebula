@@ -492,5 +492,6 @@ void CmdProcessor::getSystemTIme() {
     strftime(tmp, sizeof(tmp), "%Y-%m-%d %H:%M:%S",localtime(&curtime));
     cout << tmp << endl;
 }
+
 }  // namespace graph
 }  // namespace nebula
