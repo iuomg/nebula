@@ -485,12 +485,5 @@ void CmdProcessor::normalize(folly::StringPiece &command) {
 const std::string& CmdProcessor::getSpaceName() const {
     return curSpaceName_;
 }
-void CmdProcessor::getSystemTIme() {
-    time_t curtime;
-    time(&curtime);
-    char tmp[64];
-    strftime(tmp, sizeof(tmp), "%Y-%m-%d %H:%M:%S",localtime(&curtime));
-    cout << tmp << endl;
-}
 }  // namespace graph
 }  // namespace nebula
